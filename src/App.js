@@ -8,6 +8,10 @@ import Login from './Components/Login/Login';
 import SignUp from './Components/SignUp/SignUp';
 import Blogs from './Components/Blogs/Blogs';
 import Home from './Components/Home/Home';
+import ToolDetail from './Components/ToolDetails/ToolDetail';
+import Checkout from './Components/Checkout/Checkout';
+import RequireAuth from './Components/Login/RequireAuth/RequireAuth';
+
 function App() {
   return (
     <div>
@@ -17,6 +21,12 @@ function App() {
        <Route path='/home' element={<Home></Home>}></Route>
        <Route path='/reviews' element={<Review></Review>}></Route>
        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
+       <Route path='/tool/:toolId' element={<ToolDetail></ToolDetail>}></Route>
+       <Route path='/checkout' element={
+       <RequireAuth>
+        <Checkout></Checkout>
+       </RequireAuth>
+      }></Route>
        <Route path='/login' element={<Login></Login>}></Route>
        <Route path='/signup' element={<SignUp></SignUp>}></Route>
        <Route path='*' element={<PageNotFound></PageNotFound>}></Route>

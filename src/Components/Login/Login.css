@@ -58,7 +58,7 @@
     box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
 }
 
-.login-container button {
+/* .login-container button {
     color: white;
     margin-top: 20px;
     background: #f6d860;
@@ -68,7 +68,7 @@
     font-weight: 900;
     box-shadow: 4px 4px 4px #a991f7, -6px -6px 6px #beaef4;
     transition: 0.5s;
-}
+} */
 
 .login-container button:hover {
     box-shadow: none;

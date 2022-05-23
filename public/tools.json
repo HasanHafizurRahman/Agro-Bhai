@@ -1,0 +1,110 @@
+[
+    {
+        "id": 1,
+        "name": "HosePipe",
+        "price": "123 USD",
+        "minOrder": "120",
+        "available": "300",
+        "img": "https://cdn.shopify.com/s/files/1/2502/7378/products/IMG_9210_10eb875a-8982-4a89-8a62-5be8d181818c_1400x.jpg?v=1584024624",
+        "description": "hose pipe is useful for serving water into plant"
+    },
+    {
+        "id": 2,
+        "name": "Rotary Tiller",
+        "price": "223 USD",
+        "minOrder": "120",
+        "available": "300",
+        "img": "https://tse1.mm.bing.net/th?id=OIP.z8AgpvuuPiDIprXIfOQxRAHaHa&pid=Api&P=0&w=169&h=169",
+        "description": "Rotary Tiller is useful for planting seeds"
+    },
+    {
+        "id": 3,
+        "name": "Chain Trencher",
+        "price": "230 USD",
+        "minOrder": "120",
+        "available": "300",
+        "img": "https://tse3.mm.bing.net/th?id=OIP.PYoWsY95R1wrM-FxYrQw1QHaHa&pid=Api&P=0&w=175&h=175",
+        "description": "Chain Trencher is useful for leveling the mud"
+    },
+    {
+        "id": 4,
+        "name": "Seeder",
+        "price": "323 USD",
+        "minOrder": "120",
+        "available": "300",
+        "img": "https://tse4.mm.bing.net/th?id=OIP.lay7lO0lvoH2ccQ7ZPhciQHaFj&pid=Api&P=0&w=233&h=174",
+        "description": "seeder is useful for serving seed into your field"
+    },
+    {
+        "id": 5,
+        "name": "Disc Trencher",
+        "price": "423 USD",
+        "minOrder": "220",
+        "available": "300",
+        "img": "https://tse4.mm.bing.net/th?id=OIP.14TQQakMFLtzXnzP0CkeKQHaHa&pid=Api&P=0&w=159&h=159",
+        "description": "disc trencher is useful for cutting your corps"
+    },
+    {
+        "id": 6,
+        "name": "Mower",
+        "price": "139 USD",
+        "minOrder": "260",
+        "available": "300",
+        "img": "https://tse4.mm.bing.net/th?id=OIP.nETgxRutJ3fKFixgMSUjZAHaHa&pid=Api&P=0&w=162&h=162",
+        "description": "mower is useful for making your plants looks beautiful"
+    },
+    {
+        "id": 7,
+        "name": "Boom Sprayer",
+        "price": "333 USD",
+        "minOrder": "120",
+        "available": "300",
+        "img": "https://assetcloud.roccommerce.net/w720-h720-cpad/_theisens/1/7/9/m68914.jpg",
+        "description": "boom sprayer is useful for serving water into your plant"
+    },
+    {
+        "id": 8,
+        "name": "Single Axle Traller",
+        "price": "423 USD",
+        "minOrder": "220",
+        "available": "300",
+        "img": "https://tse3.mm.bing.net/th?id=OIP.3Frqj_4XDhuzuLsBAK4pQgHaE8&pid=Api&P=0&w=253&h=168",
+        "description": "hose pipe is useful for serving water into your plant"
+    },
+    {
+        "id": 9,
+        "name": "Round Hay Baler",
+        "price": "53 USD",
+        "minOrder": "180",
+        "available": "300",
+        "img": "https://cdn.shopify.com/s/files/1/2502/7378/products/IMG_9210_10eb875a-8982-4a89-8a62-5be8d181818c_1400x.jpg?v=1584024624",
+        "description": "Round Hay Baler is useful for serving water into your plant"
+    },
+    {
+        "id": 10,
+        "name": "Back Hoe",
+        "price": "110 USD",
+        "minOrder": "80",
+        "available": "300",
+        "img": "https://cdn.shopify.com/s/files/1/2502/7378/products/IMG_9210_10eb875a-8982-4a89-8a62-5be8d181818c_1400x.jpg?v=1584024624",
+        "description": "hose pipe is useful for serving water into your plant"
+    },
+    {
+        "id": 11,
+        "name": "HosePipe",
+        "price": "123 USD",
+        "minOrder": "120",
+        "available": "300",
+        "img": "https://cdn.shopify.com/s/files/1/2502/7378/products/IMG_9210_10eb875a-8982-4a89-8a62-5be8d181818c_1400x.jpg?v=1584024624",
+        "description": "hose pipe is useful for serving water into your plant"
+    },
+    {
+        "id": 12,
+        "name": "Tracktor",
+        "price": "123 USD",
+        "minOrder": "120",
+        "available": "300",
+        "img": "https://cdn.shopify.com/s/files/1/2502/7378/products/IMG_9210_10eb875a-8982-4a89-8a62-5be8d181818c_1400x.jpg?v=1584024624",
+        "description": "hose pipe is useful for serving water into your plant"
+    }
+]
