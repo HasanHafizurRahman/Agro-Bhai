@@ -11,9 +11,9 @@ const Review = () => {
             <h2 className="text-5xl font-bold text-center"> What Our Customer Say!</h2>
            <br />
             <div className='grid grid-cols-1 lg:grid-cols-3 px-2 gap-2'>
-            <div className='flex'>
+            <div className='flex p-2'>
                 <div class="avatar">
-                    <div class="w-16 rounded">
+                    <div class="w-16 m-2 rounded">
                         <img src="https://api.lorem.space/image/face?hash=80245" />
                     </div>
                 </div>
@@ -29,9 +29,9 @@ const Review = () => {
 </div>
                 </div>
             </div>
-            <div className='flex'>
+            <div className='flex p-2 bg-neutral text-secondary'>
                 <div class="avatar">
-                    <div class="w-16 rounded">
+                    <div class="w-16 m-2 rounded">
                         <img src="https://api.lorem.space/image/face?hash=77703" />
                     </div>
                 </div>
@@ -47,9 +47,9 @@ const Review = () => {
 </div>
                 </div>
             </div>
-            <div className='flex'>
+            <div className='flex p-2'>
                 <div class="avatar">
-                    <div class="w-16 rounded">
+                    <div class="w-16 m-2 rounded">
                         <img src="https://api.lorem.space/image/face?hash=92048" />
                     </div>
                 </div>
@@ -60,8 +60,8 @@ const Review = () => {
   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
 </div>
                 </div>
             </div>

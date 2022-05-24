@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react';
 import Tool from '../Tool/Tool';
 
 const Tools = () => {
-    const [tools, setTools] = useState([])
+    const [tools, setTools] = useState([]);
     useEffect(()=>{
-        fetch('tools.json')
+        fetch('http://localhost:5000/tool')
         .then(res => res.json())
         .then(data => setTools(data))
     },[])
@@ -13,7 +13,7 @@ const Tools = () => {
             
             {
                 tools.slice(0, 6).map(tool => <Tool
-                key={tool.id}
+                key={tool._id}
                 tool={tool}
                 ></Tool>)
             }

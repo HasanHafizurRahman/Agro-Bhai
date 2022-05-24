@@ -11,6 +11,8 @@ import Home from './Components/Home/Home';
 import ToolDetail from './Components/ToolDetails/ToolDetail';
 import Checkout from './Components/Checkout/Checkout';
 import RequireAuth from './Components/Login/RequireAuth/RequireAuth';
+import Portfolio from './Components/Portfolio/Portfolio';
+import AddService from './Components/AddService/AddService';
 
 function App() {
   return (
@@ -21,10 +23,16 @@ function App() {
        <Route path='/home' element={<Home></Home>}></Route>
        <Route path='/reviews' element={<Review></Review>}></Route>
        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
+       <Route path='/portfolio' element={<Portfolio></Portfolio>}></Route>
        <Route path='/tool/:toolId' element={<ToolDetail></ToolDetail>}></Route>
        <Route path='/checkout' element={
        <RequireAuth>
         <Checkout></Checkout>
+       </RequireAuth>
+      }></Route>
+       <Route path='/addservice' element={
+       <RequireAuth>
+        <AddService></AddService>
        </RequireAuth>
       }></Route>
        <Route path='/login' element={<Login></Login>}></Route>

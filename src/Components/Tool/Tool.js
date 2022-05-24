@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Tool.css'
 const Tool = ({tool}) => {
-    const {name, id, img, price, description, minOrder, available} = tool;
+    const {name, _id, img, price, description, minOrder, available} = tool;
     const navigate = useNavigate()
     const navigateTool = id =>{
         navigate(`/tool/${id}`)
@@ -20,7 +20,7 @@ const Tool = ({tool}) => {
     <p>Minimum Order: {minOrder}</p>
     <p>Available Order: {available}</p>
     <div class="card-actions justify-end">
-      <button onClick={() => navigateTool(id)} class="btn btn-primary text-white">Purchase {name}</button>
+      <button onClick={() => navigateTool(_id)} class="btn btn-primary text-white">Purchase {name}</button>
     </div>
   </div>
 </div>
