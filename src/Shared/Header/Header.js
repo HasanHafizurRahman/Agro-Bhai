@@ -15,6 +15,13 @@ const Header = () => {
     <li><Link to="/reviews">Reviews</Link></li>
     <li><Link to="/blogs">Tech Blogs</Link></li>
     <li><Link to="/portfolio">My Portfolio</Link></li>
+    {
+      user && <>
+      <li><Link to="/addtool">Add Tool</Link></li>
+      <li><Link to="/managetool">Manage Tool</Link></li>
+      <li><Link to="/dashboard">DashBoard</Link></li>
+      </>
+    }
     <li>{user ? <button className="btn btn-ghost" onClick={logout} >Sign Out</button> : <Link to="/login">Login</Link>}</li>
   </>
   return (

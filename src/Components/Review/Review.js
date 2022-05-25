@@ -1,14 +1,10 @@
 import React from 'react';
 
 const Review = () => {
-    const reviewJson = [
-        {
-
-        }
-    ]
+    
     return (
         <div>
-            <h2 className="text-5xl font-bold text-center"> What Our Customer Say!</h2>
+            <h2 className="text-5xl text-secondary font-bold text-center"> What Our Customer Say!</h2>
            <br />
             <div className='grid grid-cols-1 lg:grid-cols-3 px-2 gap-2'>
             <div className='flex p-2'>

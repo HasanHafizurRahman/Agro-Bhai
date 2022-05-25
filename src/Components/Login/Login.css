@@ -27,6 +27,7 @@
 
 .login-container label,
 .login-container input,
+.login-container textarea,
 .login-container button {
     display: block;
     width: 100%;

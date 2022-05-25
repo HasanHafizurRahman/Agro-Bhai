@@ -13,6 +13,11 @@ import Checkout from './Components/Checkout/Checkout';
 import RequireAuth from './Components/Login/RequireAuth/RequireAuth';
 import Portfolio from './Components/Portfolio/Portfolio';
 import AddService from './Components/AddService/AddService';
+import ManageTools from './Components/ManageTools/ManageTools';
+import Dashboard from './Components/Dashboard/Dashboard';
+import AddReview from './Components/Dashboard/AddReview';
+import MyOrders from './Components/Dashboard/MyOrders';
+import MyProfile from './Components/Dashboard/MyProfile';
 
 function App() {
   return (
@@ -30,9 +35,23 @@ function App() {
         <Checkout></Checkout>
        </RequireAuth>
       }></Route>
-       <Route path='/addservice' element={
+       <Route path='/addtool' element={
        <RequireAuth>
         <AddService></AddService>
+       </RequireAuth>
+      }></Route>
+       <Route path='/dashboard' element={
+       <RequireAuth>
+        <Dashboard></Dashboard>
+       </RequireAuth>
+      }>
+        <Route index element={<AddReview></AddReview>}></Route>
+        <Route path='myorder' element={<MyOrders></MyOrders>}></Route>
+        <Route path='profile' element={<MyProfile></MyProfile>}></Route>
+      </Route>
+       <Route path='/managetool' element={
+       <RequireAuth>
+        <ManageTools></ManageTools>
        </RequireAuth>
       }></Route>
        <Route path='/login' element={<Login></Login>}></Route>
