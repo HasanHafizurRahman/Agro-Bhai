@@ -14,7 +14,7 @@ const ToolDetail = () => {
     return (
         <div>
             <h2 className='text-3xl text-center font-bold'>Your tool: {tool.name}, is ready!</h2>
-            <h5 className='text-2xl text-center font-bold'><span className='text-primary underline text-4xl'><Link to='/checkout'>Click here</Link></span> to process your purchasing.</h5>
+            <h5 className='text-2xl text-center font-bold'><span className='text-primary underline text-4xl'><Link to='/addtool'>Click here</Link></span> to process your purchasing.</h5>
         </div>
     );
 };

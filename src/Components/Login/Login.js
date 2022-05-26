@@ -7,6 +7,7 @@ import SocialLogin from './SocialLogin/SocialLogin';
 import Loading from '../../Shared/Loading/Loading';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import useToken from '../../hooks/useToken';
 
 const Login = () => {
 
@@ -17,6 +18,7 @@ const Login = () => {
         loading,
         error,
       ] = useSignInWithEmailAndPassword(auth);
+      const [token] = useToken(user)
 
     const emailRef = useRef('');
     const passwordRef = useRef('');
@@ -34,7 +36,7 @@ const Login = () => {
 
     let errorElement 
     if (error) {
-         errorElement = <p>Error: {error.message}</p>
+         errorElement = <p>Error: { error.message }</p>
           
       }
 

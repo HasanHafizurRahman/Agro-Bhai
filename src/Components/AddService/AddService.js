@@ -1,6 +1,10 @@
 import React from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth'
 import { useForm } from "react-hook-form";
+import auth from '../../firebase.init';
+
 const AddService = () => {
+  const [user] = useAuthState(auth)
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
   const onSubmit = data => {
     console.log(data);
@@ -22,7 +26,8 @@ const AddService = () => {
         <h2 className='text-2xl text-center font-bold text-neutral'>Please book your order!</h2>
     <form className="login-form" onSubmit={handleSubmit(onSubmit)}>
       
-    <input className='mb-2' placeholder='Name' {...register("name", { required: true, maxLength: 20 })} />
+    <input className='mb-2' placeholder='Name' value={user?.name} {...register("name", { required: true, maxLength: 20 })} />
+    <input className='mb-2' placeholder='Email' value={user?.email} {...register("email", { required: true, maxLength: 20 })} />
     <br />
       
     <textarea className='mb-2 pl-px' placeholder='Description' {...register("description")} />
