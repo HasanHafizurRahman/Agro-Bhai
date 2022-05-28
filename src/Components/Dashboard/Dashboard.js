@@ -6,7 +6,8 @@ const Dashboard = () => {
     return (
         <div class="drawer drawer-mobile">
   <input id="dashboard-sidebar" type="checkbox" class="drawer-toggle" />
-  <div class="drawer-content flex flex-col items-center justify-center">
+  <div class="drawer-content">
+   <h2 className='text-3xl text-primary'>Welcome to your Dashboard</h2>
     <Outlet></Outlet>
     
   

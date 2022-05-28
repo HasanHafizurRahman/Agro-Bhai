@@ -13,7 +13,6 @@ const Header = () => {
 
   const menuItems = <>
     <li><Link to="/">Home</Link></li>
-    <li><Link to="/reviews">Reviews</Link></li>
     <li><Link to="/blogs">Tech Blogs</Link></li>
     <li><Link to="/portfolio">My Portfolio</Link></li>
     {

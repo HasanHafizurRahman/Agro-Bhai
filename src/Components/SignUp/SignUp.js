@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './SignUp.css'
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import SocialLogin from '../Login/SocialLogin/SocialLogin';
 import Loading from '../../Shared/Loading/Loading';
@@ -16,6 +16,8 @@ const SignUp = () => {
         loading,
         error,
       ] = useCreateUserWithEmailAndPassword(auth);
+
+      const [updateProfile, updating, updateError] = useUpdateProfile(auth)
       const [token] = useToken(user)
       
       const navigate = useNavigate();
@@ -23,8 +25,12 @@ const SignUp = () => {
       if(user){
           navigate('/')
       }
-      if(loading){
+      if(loading || updating){
           return <Loading></Loading>
+      }
+      let signInError;
+      if(error || updateError){
+          signInError= <p className='text-red-500'><small>{error?.message || updateError?.message}</small></p>
       }
     const handleSignup = event => {
         event.preventDefault();
@@ -41,6 +47,7 @@ const SignUp = () => {
                 <input type="text" name='email' placeholder="Your Email" required/>
                
                 <input type="password" name='password' placeholder="password" required/>
+                {signInError}
                 
                 <input type="submit" style={{ color: 'white', background: '#f6d860', height: '40px', borderRadius: '20px', cursor: 'pointer', fontWeight: '900', boxShadow: '3px 3px 3px #cbced1, -3px -3px 3px #beaef4', transition: '0.5s', marginTop: '19px' }} value="SignUp" />
             

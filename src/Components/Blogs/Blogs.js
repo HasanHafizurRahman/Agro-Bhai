@@ -2,7 +2,7 @@ import React from 'react';
 import { FaReact, FaProductHunt, FaReacteurope } from 'react-icons/fa';
 import { GiMatterStates, GiHypodermicTest, GiSwordArray } from 'react-icons/gi';
 // import { VscSymbolArray } from 'react-icons/vs';
-import './Blogs.css'
+
 const Blogs = () => {
     return (
         <div>

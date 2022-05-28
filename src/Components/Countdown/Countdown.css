@@ -1,0 +1,14 @@
+.countdown-timer{
+    width: 700px;
+    height: 100px;
+    border: 2px solid blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: "Oswald";
+    background-color: #979eac49;
+    color: #3d4451;
+    font-weight: bold;
+    padding: 15px;
+}
